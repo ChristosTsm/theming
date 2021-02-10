@@ -71,6 +71,7 @@ header {
 	background: url("../assets/mobile-bg.png") center no-repeat;
 	background-size: cover;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .burger-menu {
