@@ -1,0 +1,15 @@
+<svg id="icons_generic_greek" data-name="icons/generic/greek" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M13.221,0V8.729h6.289V4.486H17.454V6.608H15.279V2.122h6.664v8.818H2.057V2.122H8.722V6.608H6.546V4.486H4.489V8.729h6.289V0H0V24H10.779V15.271H4.489v4.243H6.546V17.392H8.722v4.486H2.057V13.061H21.943v8.818H15.279V17.392h2.175v2.122h2.057V15.271H13.221V24H24V0Z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_26" data-name="Group 26">
+    <path id="Mask-2" data-name="Mask" d="M13.221,0V8.729h6.289V4.486H17.454V6.608H15.279V2.122h6.664v8.818H2.057V2.122H8.722V6.608H6.546V4.486H4.489V8.729h6.289V0H0V24H10.779V15.271H4.489v4.243H6.546V17.392H8.722v4.486H2.057V13.061H21.943v8.818H15.279V17.392h2.175v2.122h2.057V15.271H13.221V24H24V0Z" fill="#fff"/>
+    <g id="Mask_Group_26" data-name="Mask Group 26" clip-path="url(#clip-path)">
+      <g id="Icon_" data-name="Icon 🎨">
+        <rect id="Rectangle_7" data-name="Rectangle 7" width="24" height="24" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
