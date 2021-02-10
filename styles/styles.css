@@ -202,11 +202,42 @@ ul {
 	margin: 0;
 }
 
+.m-submenu__toggle {
+	z-index: 3;
+	position: absolute;
+	width: 75%;
+	height: 20px;
+	top: 60px;
+	right: 0;
+	cursor: pointer;
+	opacity: 0;
+	outline: 1px solid black;
+	pointer-events: all;
+}
+
+.m-submenu__burger {
+	z-index: 2;
+	position: absolute;
+	width: 125px;
+	height: 25px;
+	top: 50px;
+	right: 160px;
+	padding: 9.6px 6.4px;
+}
+
 .m-menu__toggle:checked ~ .m-menu__content {
 	transform: none;
 }
 
 .m-menu__toggle:checked ~ .m-menu__backdrop {
+	opacity: 1;
+}
+
+.m-submenu__toggle:checked ~ .m-menu__content {
+	transform: none;
+}
+
+.m-submenu__toggle:checked ~ .m-menu__backdrop {
 	opacity: 1;
 }
 
