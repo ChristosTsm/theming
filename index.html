@@ -8,16 +8,20 @@
 	<title>Pancardians</title>
 	<!-- <link rel="stylesheet" href="./dist/tailwind.css"> -->
 	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="./styles/media.css">
 </head>
 
 <body id="body">
 	<header>
+
+		<img src="./assets/burger.svg" alt="Burger Menu" class="desktop-hidden burger-menu">
 
 		<div class="header-wrapper">
 
 			<div class="container">
 
 				<div class="top-bar">
+
 
 					<!-- Wrapper gia na ginei justify-between -->
 					<div class="top-bar-info-wrapper">
@@ -36,13 +40,17 @@
 
 						</div>
 
+						<a class="logo-wrapper  desktop-hidden" href="/"><img class="mobile-logo"
+								src="./assets/logo.svg" alt="Panarcadian Logo"></a>
+
+
 						<div class="top-bar-info">
 
 							<img src="./assets/weather.svg" alt="Time">
 
 							<div>
 
-								<h4>Αρκαδια</h4>
+								<h4>Καταιγιδα</h4>
 
 								<p>12°C<span>°F</span></p>
 
@@ -62,7 +70,7 @@
 
 						</div>
 
-						<div class="top-bar-info">
+						<div class="top-bar-info language-picker">
 
 							<img src="./assets/flag.svg" alt="Language Picker">
 
@@ -161,13 +169,13 @@
 
 				<img src="./assets/tree.png" alt="USA - Greece">
 
-				<h2 class="text-secondary-red">Μετριόμαστε, γιατί μετράμε!</h2>
+				<h2 class="text-secondary-red color-red">Μετριόμαστε, γιατί μετράμε!</h2>
 
 				<div class="grid">
 
 					<div class="grid-col">
 
-						<h3 class="text-primary-blue">Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και
+						<h3 class="text-primary-blue color-blue">Γενική απογραφή των αποδήμων Αρκάδων στις ΗΠΑ και
 							επαναπατρισθέντων από
 							τις ΗΠΑ</h3>
 
@@ -183,7 +191,7 @@
 
 					<div class="grid-col">
 
-						<h3 class="text-primary-blue">Απογραφόμαστε...</h3>
+						<h3 class="text-primary-blue color-blue">Απογραφόμαστε...</h3>
 
 						<ul>
 
@@ -210,11 +218,11 @@
 
 				<div class="date">
 
-					<h3 class="text-secondary-red">Τελετη Εναρξης</h3>
+					<h3 class="text-secondary-red color-red">Τελετη Εναρξης</h3>
 
-					<h2 class="text-primary-blue">Παρασκευή 20 Απριλίου 2108</h2>
+					<h2 class="text-primary-blue color-blue">Παρασκευή 20 Απριλίου 2108</h2>
 
-					<h2 class="text-primary-blue">Νεα Υορκη</h2>
+					<h2 class="text-primary-blue color-blue">Νεα Υορκη</h2>
 
 				</div>
 
@@ -326,7 +334,7 @@
 
 		<div class="section-title">
 
-			<h3 class="text-dark-gray">Επικοινωνια</h3>
+			<h3 class="text-dark-gray color-gray">Επικοινωνια</h3>
 
 			<hr>
 
@@ -404,7 +412,9 @@
 
 				<li><a href="#!">Αναζητησεις στην αρκαδια</a></li>
 
-				<li><a href="#!"><img src="./assets/mail-icon.svg" alt="Contact Us"></a></li>
+				<li><a href="#!">Επικοινωνια</a></li>
+
+				<!-- <li><a href="#!"><img src="./assets/mail-icon.svg" alt="Contact Us"></a></li> -->
 
 			</ul>
 
