@@ -5,14 +5,340 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tailwind</title>
 	<link rel="stylesheet" href="./dist/tailwind.css">
+	<link rel="stylesheet" href="./styles/styles-test.css">
+	<title>Tailwind</title>
 </head>
 
 <body>
-	<div class="mx-auto w-50">
-		<h1 class="text-primary-blue mt-60 font-bold">Test</h1>
-	</div>
+
+	<header>
+
+		<!-- HAMBURGER MENU START -->
+		<!-- <div class="m-menu laptop:hidden tablet:block">
+
+			<input class="m-menu__toggle" type="checkbox">
+
+			<div class="m-menu__burger">
+
+				<span></span>
+
+			</div>
+
+			<div class="m-menu__content">
+				<nav>
+
+					<div class="mobile-info">
+
+						<div>
+							<img src="./assets/mobile-user.svg" alt="User">
+
+							<a href="#!">Εγγραφή / Σύνδεση</a>
+						</div>
+
+						<div class="top-bar-info">
+
+							<img src="./assets/flag.svg" alt="Language Picker">
+
+							<a href="#"><img src="./assets/chevron.svg" alt="Language Picker"></a>
+
+						</div>
+
+					</div>
+
+					<hr>
+
+					<ul class="mobile-menu-list">
+
+						<li>
+
+							<a href="#!">Η ομοσπονδια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+
+							<div class="m-menu">
+
+								<div class="m-submenu__burger">
+
+									<span></span>
+
+								</div>
+
+								<input class="m-submenu__toggle" type="checkbox">
+
+								<div class="m-submenu__content">
+
+									<div class="sub-menu__back-cta">
+
+										<img src="./assets/chevron-left.svg" alt="Επιστροφή">
+
+										<a href="#!">Επιστροφή</a>
+
+									</div>
+									<nav>
+										<ul>
+											<li><a href='#'>Ιστορία</a></li>
+
+											<li><a href='#'>Διοικητικό Συμβούλιο</a></li>
+
+											<li><a href='#'>Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+
+											<li><a href='#'>Μήνυμα Προέδρου</a></li>
+
+											<li><a href='#'>Districts</a></li>
+
+											<li><a href='#'>Διατελεσαντες Προέδροι</a></li>
+
+											<li><a href='#'>Αποστολή - Αξίες</a></li>
+
+											<li><a href='#'>Πορεία - Εξέλιξη</a></li>
+
+											<li><a href='#'>Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+
+											<li><a href='#'>Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+
+											<li><a href='#'>Ο Οικουμενικός Πατριάρχης</a></li>
+
+											<li><a href='#'>Ο Αρχιεπίσκοπος Αμερικής</a></li>
+										</ul>
+
+									</nav>
+
+								</div>
+
+								<div class="m-submenu__backdrop"></div>
+
+							</div>
+
+						</li>
+
+						<li>
+							<a href="#!">Αρκαδων εργα</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						</li>
+
+						<li>
+							<a href="#!">Επωνυμοι αρκαδες</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						</li>
+
+						<li>
+							<a href="#!">Νεα - Ενημερωση</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						</li>
+
+						<li>
+							<a href="#!">Επισκεψη στην Αρκαδια</a><img src="./assets/chevron-right.svg"
+								alt="Menu indicator">
+						</li>
+
+						<li>
+							<a href="#!">Αναζητησεις στην αρκαδια</a><img src="./assets/chevron-right.svg"
+								alt="Menu indicator">
+						</li>
+
+						<li>
+							<a href="#!">Επικοινωνια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						</li>
+
+					</ul>
+
+				</nav>
+			</div>
+			<div class="m-menu__backdrop"></div>
+		</div> -->
+		<!-- HAMBURGER MENU END -->
+
+		<div class="header-wrapper pt-10 mobile:text-center desktop:text-left h-750">
+
+			<div class="container">
+
+				<div class="desktop:h-50 mobile:h-full desktop:ml-245 flex mb-8 justify-between pt-8 ">
+					<!-- top-bar -->
+
+					<div class="flex items-center min-w-full justify-around desktop:min-w-max desktop:justify-start">
+
+						<div class="flex mobile:h-full items-center desktop:h-50 desktop:pl-15">
+							<!-- top-bar-info -->
+
+							<img class="w-20 h-20 mr-5" src="./assets/clock.svg" alt="Time">
+
+							<div class="text-white desktop:mr-20 flex flex-col mr-5">
+
+								<h4 class='text-12 font-semibold uppercase tracking-wide'>Αρκαδια</h4>
+
+								<p class="text-26 font-proxima font-normal">13:28</p>
+
+							</div>
+
+						</div>
+
+						<a class="desktop-hidden" href="/"><img class="w-120 h-120 rounded" src="./assets/logo.svg"
+								alt="Panarcadian Logo"></a>
+
+
+						<div class="flex mobile:h-full items-center desktop:h-50 desktop:pl-15">
+
+							<img class="w-20 h-20 mr-5" src="./assets/weather.svg" alt="Time">
+
+							<div class="text-white">
+
+								<h4 class='text-12 font-semibold uppercase tracking-wide'>Καταιγιδα</h4>
+
+								<p class="text-26 font-proxima font-normal">12°C<span class="opacity-40">°F</span></p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div
+						class="tablet:hidden mobile:hidden top-bar-info-wrapper desktop:flex desktop:items-center justify-around desktop:min-w-min desktop:justify-start">
+
+						<div class=" top-bar-info h-full items-center pl-15 mobile:hidden desktop:flex mr-10">
+
+							<img class="w-20 h-20 mr-5" src="./assets/user.svg" alt="User">
+
+							<a class="text-white font-semibold" href="#!">Εγγραφή / Σύνδεση</a>
+
+						</div>
+
+						<div
+							class="top-bar-info language-picker h-full items-center pl-15 mobile:hidden desktop:flex mt-2">
+
+							<img class="w-20 h-20 mr-5" src="./assets/flag.svg" alt="Language Picker">
+
+							<a href="#"><img src="./assets/chevron.svg" alt="Language Picker"></a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<nav class="navigation bg-white items-center content-center rounded h-60">
+
+					<a class="ml-50 logo-wrapper" href="#">
+
+						<img class="rounded-full" src="./assets/logo.svg" alt="Panarcadian Logo">
+
+					</a>
+
+					<ul class="flex text-14 uppercase h-60 pl-40">
+
+						<li class="has-dropdown relative h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Η ομοσπονδια</a>
+
+							<ul
+								class="submenu absolute top-50 left-0 w-275 h-auto flex-col bg-white align-baseline pt-15 px-20 rounded">
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Ιστορία</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Διοικητικό Συμβούλιο</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Πρόεδρος - Βιογραφικό
+										Σημείωμα</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Μήνυμα Προέδρου</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Districts</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Διατελεσαντες Προέδροι</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Αποστολή - Αξίες</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Πορεία - Εξέλιξη</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Ο Έλληνας πρέσβης στην
+										Ουάσιγκτον</a></li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Ο Πρέσβης ΗΠΑ στην Αθήνα</a>
+								</li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Ο Οικουμενικός Πατριάρχης</a>
+								</li>
+
+								<li class="my-10 h-auto"><a
+										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
+										href='#'>Ο Αρχιεπίσκοπος Αμερικής</a>
+								</li>
+
+							</ul>
+
+						</li>
+
+						<li class=" h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Αρκαδων εργα</a></li>
+
+						<li class=" h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Επωνυμοι αρκαδες</a></li>
+
+						<li class=" h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Νεα - Ενημερωση</a></li>
+
+						<li class=" h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Επισκεψη στην αρκαδια</a></li>
+
+						<li class=" h-full mt-20 mr-40"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!">Αναζητησεις στην αρκαδια</a></li>
+
+						<li class=" h-full mt-20"><a
+								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
+								href="#!"><img src="./assets/mail-icon.svg" alt="Contact Us"></a>
+						</li>
+
+					</ul>
+
+				</nav>
+
+				<img class="paf ml-235 mt-20 mobile:w-290 mobile:mt-10 mobile:mb-20" src="./assets/paf.svg" alt="PAF">
+
+			</div>
+
+			<div id="featured">
+
+				<img src="./assets/welcome-icon.svg" alt="Η Αποστολή μας">
+
+				<h3>Καλως ηλθατε</h3>
+
+				<h2>Η αποστολή μας</h2>
+
+				<p>Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι μια πανεθνική μη κερδοσκοπικού αδελφό ελληνικό-αμερικανική
+					οργάνωση τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια
+					Ελλάδα…</p>
+
+				<a class="cta-primary" href="#">Περισσοτερα</a>
+
+			</div>
+
+		</div>
+
+	</header>
+
 </body>
 
 </html>

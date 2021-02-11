@@ -1,0 +1,93 @@
+@font-face {
+	font-family: Proxima;
+	src: url(../fonts/ProximaNovaRegular.otf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: Proxima;
+	src: url(../fonts/ProximaNovaBold.otf);
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url(../fonts/SourceSansPro-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	src: url(../fonts/SourceSansPro-Bold.ttf);
+	font-weight: 600;
+}
+
+body {
+	font-family: "SourceSansPro", Arial, Helvetica, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.header-wrapper {
+	background: url("../assets/bg.png") bottom center no-repeat;
+	background-size: cover;
+}
+
+.text-12 {
+	font-size: 12px;
+}
+
+.text-14 {
+	font-size: 14px;
+}
+
+.text-26 {
+	font-size: 26px;
+}
+
+.font-proxima {
+	font-family: "Proxima";
+}
+
+.logo-wrapper img {
+	display: none;
+}
+
+.navigation {
+	display: none;
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1240px;
+	}
+
+	.desktop-hidden {
+		display: none;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.logo-wrapper img {
+		border: 10px solid #ab0427;
+		display: block;
+	}
+
+	.navigation ul .has-dropdown:hover .submenu {
+		display: block;
+	}
+
+	.navigation ul .has-dropdown .submenu {
+		display: none;
+	}
+}
+
+@media (min-width: 1680px) {
+	.container {
+		max-width: 1360px;
+	}
+}
