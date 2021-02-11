@@ -12,7 +12,7 @@
 
 <body class="overflow-x-hidden">
 
-	<header class="mobile:overflow-x-hidden">
+	<header class="mobile:overflow-x-hidden" id="top">
 
 		<!-- HAMBURGER MENU START -->
 		<div class="m-menu laptop:hidden">
@@ -160,15 +160,15 @@
 
 							<div class="text-white desktop:mr-20 flex flex-col mr-5">
 
-								<h4 class='text-12 font-semibold uppercase tracking-wide'>Αρκαδια</h4>
+								<h4 class='text-xs font-semibold uppercase tracking-wide'>Αρκαδια</h4>
 
-								<p class="text-26 font-proxima font-normal">13:28</p>
+								<p class="text-_26 font-proxima font-normal">13:28</p>
 
 							</div>
 
 						</div>
 
-						<a class="desktop-hidden" href="/">
+						<a class="desktop-hidden laptop:hidden mobile:block" href="/">
 							<img class="w-120 h-120 rounded" src="./assets/logo.svg" alt="Panarcadian Logo">
 						</a>
 
@@ -179,9 +179,9 @@
 
 							<div class="text-white">
 
-								<h4 class='text-12 font-semibold uppercase tracking-wide'>Καταιγιδα</h4>
+								<h4 class='text-xs font-semibold uppercase tracking-wide'>Καταιγιδα</h4>
 
-								<p class="text-26 font-proxima font-normal">12°C<span class="opacity-40">°F</span></p>
+								<p class="text-_26 font-proxima font-normal">12°C<span class="opacity-40">°F</span></p>
 
 							</div>
 
@@ -213,15 +213,15 @@
 
 				</div>
 
-				<nav class="navigation bg-white items-center content-center rounded h-60">
+				<nav class="navigation laptop:flex mobile:hidden bg-white items-center content-center rounded h-60">
 
 					<a class="ml-50 logo-wrapper" href="#">
 
-						<img class="rounded-full" src="./assets/logo.svg" alt="Panarcadian Logo">
+						<img class="rounded-full mobile:hidden laptop:block" src="./assets/logo.svg" alt="Panarcadian Logo">
 
 					</a>
 
-					<ul class="flex text-14 uppercase h-60 pl-40">
+					<ul class="flex text-sm uppercase h-60 pl-40">
 
 						<li class="has-dropdown relative h-full mt-20 mr-40 laptop:mr-20"><a
 								class="text-primary-blue font-semibold transition-all hover:text-secondary-red"
@@ -322,22 +322,22 @@
 			</div>
 
 			<div id="featured"
-				class="laptop:w-450 laptop:h-450 border-8 border-white border-solid mobile:w-320 mobile:h-320 text-center text-white mobile:mt-50 mobile:mb-20 mx-auto mobile:p-15 ">
+				class="laptop:w-450 laptop:h-450 border-8 border-white border-solid mobile:w-380 mobile:h-380 text-center text-white mobile:mt-50 mobile:mb-20 mx-auto mobile:p-15 ">
 
-				<img class="mx-auto" src="./assets/welcome-icon.svg" alt="Η Αποστολή μας">
+				<img class="mx-auto mobile:mt-10" src="./assets/welcome-icon.svg" alt="Η Αποστολή μας">
 
-				<h3 class="text-12 uppercase tablet:mb-15 laptop:mb-30 tracking-wide font-semibold">Καλως ηλθατε</h3>
+				<h3 class="text-sm uppercase laptop:mb-30 mobile:mb-15 tracking-wide font-semibold">Καλως ηλθατε</h3>
 
-				<h2 class="text-18 tablet:mb-15 laptop:mb-30 text-24 font-semibold">Η αποστολή μας</h2>
+				<h2 class="laptop:mb-30 mobile:mb-15 mobile:text-_18 laptop:text-_24 font-semibold">Η αποστολή μας</h2>
 
-				<p class="mobilie:text-14 tablet:mb-15 laptop:mb-30 text-16">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι
+				<p class="mobile:text-sm mobile:my-15 laptop:mb-20 laptop:text-_18">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι
 					μια πανεθνική μη
 					κερδοσκοπικού
 					αδελφό ελληνικό-αμερικανική
 					οργάνωση τα μέλη της οποίας κατεβαίνουν από την περιοχή της Αρκαδίας στην Πελοπόννησο, στη νότια
 					Ελλάδα…</p>
 
-				<a class="text-14 border border-solid border-white rounded uppercase text-white laptop:w-200 laptop:h-50 inline-flex justify-center items-center mobile:mt-5 mobile:w-140 mobile:h-40"
+				<a class="text-sm mobile:mt-30 laptop:mt-5 border border-solid border-white rounded uppercase text-white laptop:w-200 laptop:h-50 inline-flex justify-center items-center mobile:mt-5 mobile:w-140 mobile:h-40"
 					href="#">Περισσοτερα</a>
 
 			</div>
@@ -348,13 +348,13 @@
 
 	<main>
 
-		<div class="container">
+		<div class="laptop:container">
 
 			<div class="mobile:px-10 tablet:text-center laptop:text-left">
 
 				<img class="mobile:my-30 mx-auto" src="./assets/tree.png" alt="USA - Greece">
 
-				<h2 class="text-secondary-red text-center tablet:text-35 text-48 mb-15 font-semibold">Μετριόμαστε, γιατί
+				<h2 class="text-secondary-red text-center tablet:text-_35 text-_48 mb-15 font-semibold">Μετριόμαστε, γιατί
 					μετράμε!</h2>
 
 				<div
@@ -362,18 +362,18 @@
 
 					<div>
 
-						<h3 class="text-primary-blue color-blue mb-20 text-18 font-semibold">Γενική απογραφή των
+						<h3 class="text-primary-blue color-blue mb-20 text-_18 font-semibold">Γενική απογραφή των
 							αποδήμων Αρκάδων στις
 							ΗΠΑ και
 							επαναπατρισθέντων από
 							τις ΗΠΑ</h3>
 
-						<p class="mb-10 text-dark-gray text-16">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή
+						<p class="mb-10 text-dark-gray text-base">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή
 							των Αρκάδων που
 							διαμένουν και
 							εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). </p>
 
-						<h4 class="mb-15 text-dark-gray text-16 font-semibold">Το αποτύπωμα της Αρκαδικής γης μας
+						<h4 class="mb-15 text-dark-gray text-base font-semibold">Το αποτύπωμα της Αρκαδικής γης μας
 							συνδέει!</h4>
 
 						<p>Όση χιλιομετρική απόσταση και αν μας χωρίζει, όσες γενιές και να έχουμε...ψηλώσει πέρα απο
@@ -383,7 +383,7 @@
 
 					<div>
 
-						<h3 class="text-primary-blue color-blue mb-40 text-18 font-semibold">Απογραφόμαστε...</h3>
+						<h3 class="text-primary-blue color-blue mb-40 text-_18 font-semibold">Απογραφόμαστε...</h3>
 
 						<ul>
 
@@ -418,14 +418,14 @@
 
 				</div>
 
-				<div class="date text-center mobile:mb-30">
+				<div class="text-center mobile:mb-30">
 
-					<h3 class="text-secondary-red text-18 mb-5 font-semibold">Τελετη Εναρξης</h3>
+					<h3 class="text-secondary-red text-_18 uppercase mb-5 font-semibold">Τελετη Εναρξης</h3>
 
-					<h2 class="text-primary-blue tablet:text-24 text-35 mb-10 font-semibold">Παρασκευή 20
+					<h2 class="text-primary-blue mobile:text-_24 laptop:text-_35  mb-10 font-semibold">Παρασκευή 20
 						Απριλίου 2108</h2>
 
-					<h2 class="text-primary-blue text-18 font-semibold">Νεα Υορκη</h2>
+					<h2 class="text-primary-blue text-_18 font-semibold">Νεα Υορκη</h2>
 
 				</div>
 
@@ -444,19 +444,19 @@
 
 				<img class="mx-auto" src="./assets/welcome-icon.svg" alt="Έργα & Δραστηριότητες">
 
-				<h3 class="uppercase tracking-wide text-12 text-white mt-5 font-semibold">Εργα & Δραστηριοτητες</h3>
+				<h3 class="uppercase tracking-wide text-xs text-white mt-5 font-semibold">Εργα & Δραστηριοτητες</h3>
 
 			</div>
 
-			<div class="pl-20 grid grid-cols-4 desktop:gap-x-20 mobile:gap-x-280 mb-45">
+			<div class="laptop:pl-20 mobile:pl-0 grid grid-cols-4 desktop:gap-x-20 mobile:gap-x-280 mb-45">
 
 				<div class="text-white text-left mobile:w-260 laptop:w-full ">
 
 					<img class="w-full mb-20" src="./assets/photo1.png" alt="Photo 1">
 
-					<h2 class="mb-12 text-18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+					<h2 class="mb-12 text-_18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
 
-					<p class="mb-5 text-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					<p class="mb-5 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut
 						labore et dolor.</p>
 
@@ -473,9 +473,9 @@
 
 					<img class="w-full mb-20" src="./assets/photo2.png" alt="Photo 2">
 
-					<h2 class="mb-12 text-18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+					<h2 class="mb-12 text-_18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
 
-					<p class="mb-5 text-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					<p class="mb-5 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut
 						labore et dolor.</p>
 
@@ -492,9 +492,9 @@
 
 					<img class="w-full mb-20" src="./assets/photo3.png" alt="Photo 3">
 
-					<h2 class="mb-12 text-18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+					<h2 class="mb-12 text-_18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
 
-					<p class="mb-5 text-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					<p class="mb-5 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut
 						labore et dolor.</p>
 
@@ -511,9 +511,9 @@
 
 					<img class="w-full mb-20" src="./assets/photo4.png" alt="Photo 4">
 
-					<h2 class="mb-12 text-18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
+					<h2 class="mb-12 text-_18 font-semibold">Γενικού Παναρκαδικό Νοσοκομείο Τρίπολης</h2>
 
-					<p class="mb-5 text-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+					<p class="mb-5 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 						tempor incididunt ut
 						labore et dolor.</p>
 
@@ -529,7 +529,7 @@
 
 			</div>
 
-			<a class="cta-primary text-14 border border-solid border-white rounded uppercase text-white w-200 h-50 inline-flex items-center justify-center"
+			<a class="cta-primary text-sm border border-solid border-white rounded uppercase text-white w-200 h-50 inline-flex items-center justify-center"
 				href="#">Περισσοτερα</a>
 
 		</div>
@@ -540,7 +540,7 @@
 
 		<div class="section-title mb-30 text-center pt-40">
 
-			<h3 class="uppercase tracking-wide text-12 text-primary-blue font-semibold">Επικοινωνια</h3>
+			<h3 class="uppercase tracking-wide text-xs text-primary-blue font-semibold">Επικοινωνια</h3>
 
 			<hr class="my-30 tablet:w-full border border-gray-200 mx-auto laptop:w-740">
 
@@ -550,22 +550,22 @@
 
 			<form action="" class="px-60 flex flex-col mobile:px-15">
 
-				<label class="text-12 mb-5" for="name">Ονοματεπώνυμο</label>
+				<label class="text-xs mb-5" for="name">Ονοματεπώνυμο</label>
 
 				<input class="h-45 mb-15 rounded outline-none border border-solid border-gray-400 relative" type="text"
 					name="name" id="name">
 
-				<label class="text-12 mb-5 tel-icon relative" for="tel">Τηλέφωνο</label>
+				<label class="text-xs mb-5 tel-icon relative" for="tel">Τηλέφωνο</label>
 
 				<input class="h-45 mb-15 rounded outline-none border border-solid border-gray-400 relative" type="text"
 					name="tel" id="tel">
 
-				<label class="text-12 mb-5 email-icon relative" for="email">Email</label>
+				<label class="text-xs mb-5 email-icon relative" for="email">Email</label>
 
 				<input class="h-45 mb-15 rounded outline-none border border-solid border-gray-400 relative" type="text"
 					name="email" id="email">
 
-				<label class="text-12 mb-5" for="message">Μύνημα</label>
+				<label class="text-xs mb-5" for="message">Μύνημα</label>
 
 				<textarea class="outline-none rounded border border-solid border-gray-400" name="message" id="message"
 					cols="30" rows="10"></textarea>
@@ -586,7 +586,7 @@
 
 	<footer class="mt-55 bg-primary-blue text-center relative">
 
-		<a href="#body" class="absolute laptop:right-100 laptop:-top-20 mobile:right-30 mobile:bottom-50"><img
+		<a href="#top" class="absolute laptop:right-100 laptop:-top-20 mobile:right-30 mobile:bottom-50"><img
 				src="./assets/to-top.svg" alt="Back to top"></a>
 
 		<div class="mt-30 flex flex-col items-center">

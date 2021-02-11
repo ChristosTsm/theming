@@ -35,48 +35,8 @@ html {
 	background-size: cover;
 }
 
-.text-12 {
-	font-size: 12px;
-}
-
-.text-14 {
-	font-size: 14px;
-}
-
-.text-16 {
-	font-size: 16px;
-}
-
-.text-18 {
-	font-size: 18px;
-}
-
-.text-24 {
-	font-size: 24px;
-}
-
-.text-26 {
-	font-size: 26px;
-}
-
-.text-35 {
-	font-size: 35px;
-}
-
-.text-48 {
-	font-size: 48px;
-}
-
 .font-proxima {
 	font-family: "Proxima";
-}
-
-.logo-wrapper img {
-	display: none;
-}
-
-.navigation {
-	display: none;
 }
 
 #featured {
@@ -360,17 +320,8 @@ html {
 		max-width: 1240px;
 	}
 
-	.desktop-hidden {
-		display: none;
-	}
-
-	.navigation {
-		display: flex;
-	}
-
 	.logo-wrapper img {
 		border: 10px solid #ab0427;
-		display: block;
 	}
 
 	.navigation ul .has-dropdown:hover .submenu {
