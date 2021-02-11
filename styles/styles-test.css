@@ -31,7 +31,7 @@ html {
 }
 
 .header-wrapper {
-	background: url("../assets/bg.png") bottom center no-repeat;
+	background: url("../assets/mobile-bg.png") bottom center no-repeat;
 	background-size: cover;
 }
 
@@ -351,6 +351,11 @@ html {
 /* / Form Icons */
 
 @media (min-width: 1280px) {
+	.header-wrapper {
+		background: url("../assets/bg.png") bottom center no-repeat;
+		background-size: cover;
+	}
+
 	.container {
 		max-width: 1240px;
 	}
