@@ -626,6 +626,10 @@ Contact Section
 	padding-top: 35px;
 }
 
+.contact h3 {
+	font-size: 14px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
