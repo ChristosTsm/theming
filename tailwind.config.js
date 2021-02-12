@@ -2,6 +2,10 @@ module.exports = {
 	purge: [],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		fontFamily: {
+			body: "'SourceSansPro'",
+			proxima: "'Proxima'",
+		},
 		container: {
 			center: true,
 		},
@@ -14,6 +18,15 @@ module.exports = {
 			_26: ["26px", "1.5"],
 			_35: ["35px", "1.5"],
 			_48: ["48px", "1.5"],
+		},
+		zIndex: {
+			1: 1,
+			2: 2,
+			3: 3,
+			4: 4,
+			5: 5,
+			100: 100,
+			auto: "auto",
 		},
 		screens: {
 			mobile: "360px",
@@ -54,7 +67,9 @@ module.exports = {
 			50: "50px",
 			55: "55px",
 			60: "60px",
+			64: "64px",
 			70: "70px",
+			90: "90px",
 			100: "100px",
 			120: "120px",
 			130: "130px",
@@ -68,6 +83,7 @@ module.exports = {
 			275: "275px",
 			280: "280px",
 			290: "290px",
+			300: "300px",
 			380: "380px",
 			390: "390px",
 			450: "450px",

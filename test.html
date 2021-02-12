@@ -10,35 +10,38 @@
 	<title>Tailwind</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden font-body ">
 
 	<header class="mobile:overflow-x-hidden" id="top">
 
 		<!-- HAMBURGER MENU START -->
-		<div class="m-menu laptop:hidden">
+		<div class="m-menu laptop:hidden fixed top-1 left-1 w-screen h-screen z-100 pointer-events-none m-0 p-0">
 
-			<input class="m-menu__toggle" type="checkbox">
+			<input
+				class="m-menu__toggle absolute z-3 w-64 h-64 top-1 right-1 cursor-pointer opacity-0 outline-black pointer-events-auto "
+				type="checkbox">
 
-			<div class="m-menu__burger">
+			<div class="m-menu__burger z-2 absolute w-64 h-64 top-0 right-15 py-10 px-6">
 
 				<span></span>
 
 			</div>
 
-			<div class="m-menu__content">
+			<div
+				class="m-menu__content z-4 absolute -top-1 -right-1 overflow-auto w-300 h-screen m-0 pb-35 bg-white pointer-events-auto origin-center transform translate-x-450  shadow-sm">
 				<nav>
 
-					<div class="mobile-info">
+					<div class="mobile-info flex items-center justify-between p-20">
 
-						<div>
-							<img src="./assets/mobile-user.svg" alt="User">
+						<div class="flex items-center">
+							<img class="mr-5" src="./assets/mobile-user.svg" alt="User">
 
-							<a href="#!">Εγγραφή / Σύνδεση</a>
+							<a class="font-semibold text-sm text-primary-blue" href="#!">Εγγραφή / Σύνδεση</a>
 						</div>
 
 						<div class="top-bar-info">
 
-							<img src="./assets/flag.svg" alt="Language Picker">
+							<img class="mr-5" src="./assets/flag.svg" alt="Language Picker">
 
 							<a href="#"><img src="./assets/chevron.svg" alt="Language Picker"></a>
 
@@ -46,107 +49,147 @@
 
 					</div>
 
-					<hr>
+					<hr class="border border-1 border-gray-200">
 
-					<ul class="mobile-menu-list">
+					<ul class="mobile-menu-list px-20">
 
-						<li>
+						<li class="my-20 flex justify-between items-center relative">
 
-							<a href="#!">Η ομοσπονδια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red" href="#!">Η
+								ομοσπονδια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
 
-							<div class="m-menu">
+							<div class="m-menu fixed top-1 left-1 w-screen h-screen z-100 pointer-events-none m-0 p-0">
 
-								<div class="m-submenu__burger">
+								<div class="m-submenu__burger z-2 absolute w-120 h-25 top-90 right-160 py-10 px-6">
 
 									<span></span>
 
 								</div>
 
-								<input class="m-submenu__toggle" type="checkbox">
+								<input
+									class="m-submenu__toggle z-3 absolute top-100 w-280 -right-1 cursor-pointer opacity-0 pointer-events-auto"
+									type="checkbox">
 
-								<div class="m-submenu__content">
+								<div
+									class="m-submenu__content z-5 absolute -top-1 -right-1 overflow-auto w-245 h-screen m-0 pb-35 bg-white pointer-events-auto origin-center transform translate-x-450  shadow-sm">
 
-									<div class="sub-menu__back-cta">
+									<div class="sub-menu__back-cta flex items-center py-15 px-10">
 
 										<img src="./assets/chevron-left.svg" alt="Επιστροφή">
 
-										<a href="#!">Επιστροφή</a>
+										<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm"
+											href="#!">Επιστροφή</a>
 
 									</div>
 									<nav>
-										<ul>
-											<li><a href='#'>Ιστορία</a></li>
+										<ul class="pl-20">
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Ιστορία</a>
+											</li>
 
-											<li><a href='#'>Διοικητικό Συμβούλιο</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Διοικητικό
+													Συμβούλιο</a></li>
 
-											<li><a href='#'>Πρόεδρος - Βιογραφικό Σημείωμα</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Πρόεδρος
+													- Βιογραφικό Σημείωμα</a></li>
 
-											<li><a href='#'>Μήνυμα Προέδρου</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Μήνυμα
+													Προέδρου</a></li>
 
-											<li><a href='#'>Districts</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Districts</a>
+											</li>
 
-											<li><a href='#'>Διατελεσαντες Προέδροι</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Διατελεσαντες
+													Προέδροι</a></li>
 
-											<li><a href='#'>Αποστολή - Αξίες</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Αποστολή
+													- Αξίες</a></li>
 
-											<li><a href='#'>Πορεία - Εξέλιξη</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Πορεία
+													- Εξέλιξη</a></li>
 
-											<li><a href='#'>Ο Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Ο
+													Έλληνας πρέσβης στην Ουάσιγκτον</a></li>
 
-											<li><a href='#'>Ο Πρέσβης ΗΠΑ στην Αθήνα</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Ο
+													Πρέσβης ΗΠΑ στην Αθήνα</a></li>
 
-											<li><a href='#'>Ο Οικουμενικός Πατριάρχης</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Ο
+													Οικουμενικός Πατριάρχης</a></li>
 
-											<li><a href='#'>Ο Αρχιεπίσκοπος Αμερικής</a></li>
+											<li class="my-20 flex justify-between items-center"><a href='#'
+													class="text-primary-blue uppercase font-semibold hover:text-secondary-red text-sm">Ο
+													Αρχιεπίσκοπος Αμερικής</a></li>
 										</ul>
 
 									</nav>
 
 								</div>
 
-								<div class="m-submenu__backdrop"></div>
+								<div
+									class="m-submenu__backdrop z-2 fixed w-full h-full bg-black -top-1 -left-1 bg-opacity-50 opacity-0 transition-opacity pointer-events-none">
+								</div>
 
 							</div>
 
 						</li>
 
-						<li>
-							<a href="#!">Αρκαδων εργα</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red"
+								href="#!">Αρκαδων εργα</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
 						</li>
 
-						<li>
-							<a href="#!">Επωνυμοι αρκαδες</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
-						</li>
-
-						<li>
-							<a href="#!">Νεα - Ενημερωση</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
-						</li>
-
-						<li>
-							<a href="#!">Επισκεψη στην Αρκαδια</a><img src="./assets/chevron-right.svg"
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red"
+								href="#!">Επωνυμοι αρκαδες</a><img src="./assets/chevron-right.svg"
 								alt="Menu indicator">
 						</li>
 
-						<li>
-							<a href="#!">Αναζητησεις στην αρκαδια</a><img src="./assets/chevron-right.svg"
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red" href="#!">Νεα
+								- Ενημερωση</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						</li>
+
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red"
+								href="#!">Επισκεψη στην Αρκαδια</a><img src="./assets/chevron-right.svg"
 								alt="Menu indicator">
 						</li>
 
-						<li>
-							<a href="#!">Επικοινωνια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red"
+								href="#!">Αναζητησεις στην αρκαδια</a><img src="./assets/chevron-right.svg"
+								alt="Menu indicator">
+						</li>
+
+						<li class="my-20 flex justify-between items-center relative">
+							<a class="text-primary-blue uppercase font-semibold hover:text-secondary-red"
+								href="#!">Επικοινωνια</a><img src="./assets/chevron-right.svg" alt="Menu indicator">
 						</li>
 
 					</ul>
 
 				</nav>
 			</div>
-			<div class="m-menu__backdrop"></div>
+			<div
+				class="m-menu__backdrop fixed z-1 -top-1 -left-1 w-full h-full bg-black bg-opacity-50 opacity-0 transition-opacity pointer-events-none">
+			</div>
 		</div>
 		<!-- HAMBURGER MENU END -->
 
 		<div class="header-wrapper pt-10 mobile:text-center desktop:text-left h-750">
 
-			<div class="container ">
+			<div class="container">
 
 				<div class="desktop:h-50 mobile:h-full desktop:ml-245 flex mb-8 justify-between pt-8 ">
 					<!-- top-bar -->
@@ -217,7 +260,8 @@
 
 					<a class="ml-50 logo-wrapper" href="#">
 
-						<img class="rounded-full mobile:hidden laptop:block" src="./assets/logo.svg" alt="Panarcadian Logo">
+						<img class="rounded-full mobile:hidden tablet:hidden laptop:block" src="./assets/logo.svg"
+							alt="Panarcadian Logo">
 
 					</a>
 
@@ -228,7 +272,7 @@
 								href="#!">Η ομοσπονδια</a>
 
 							<ul
-								class="submenu absolute top-50 left-0 w-275 h-auto flex-col bg-white align-baseline pt-15 px-20 rounded">
+								class="submenu hidden absolute top-50 left-0 w-275 h-auto flex-col bg-white align-baseline pt-15 px-20 rounded">
 
 								<li class="my-10 h-auto"><a
 										class="capitalize text-primary-blue font-semibold transition-all hover:text-secondary-red"
@@ -330,7 +374,12 @@
 
 				<h2 class="laptop:mb-30 mobile:mb-15 mobile:text-_18 laptop:text-_24 font-semibold">Η αποστολή μας</h2>
 
-				<p class="mobile:text-sm mobile:my-15 laptop:mb-20 laptop:text-_18">Ο Παναρκαδικής Ομοσπονδίας Αμερικής είναι
+				<p class="mobile:leading-5 mobile:text-sm mobile:my-15 laptop:mb-20 laptop:text-_18">
+					Ο
+					Παναρκαδικής
+					Ομοσπονδίας
+					Αμερικής
+					είναι
 					μια πανεθνική μη
 					κερδοσκοπικού
 					αδελφό ελληνικό-αμερικανική
@@ -354,7 +403,8 @@
 
 				<img class="mobile:my-30 mx-auto" src="./assets/tree.png" alt="USA - Greece">
 
-				<h2 class="text-secondary-red text-center tablet:text-_35 text-_48 mb-15 font-semibold">Μετριόμαστε, γιατί
+				<h2 class="text-secondary-red text-center tablet:text-_35 text-_48 mb-15 font-semibold">Μετριόμαστε,
+					γιατί
 					μετράμε!</h2>
 
 				<div
@@ -368,7 +418,8 @@
 							επαναπατρισθέντων από
 							τις ΗΠΑ</h3>
 
-						<p class="mb-10 text-dark-gray text-base">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί απογραφή
+						<p class="mb-10 text-dark-gray text-base">Η Παναρκαδική Ομοσπονδία Αμερικής πραγματοποιεί
+							απογραφή
 							των Αρκάδων που
 							διαμένουν και
 							εργάζονται στις ΗΠΑ, (ανεξαρτήτως υπηκότητας). </p>
